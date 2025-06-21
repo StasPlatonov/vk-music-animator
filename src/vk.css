@@ -1,0 +1,188 @@
+.visualizer_container {
+    width: calc(100% - 8px);
+    background-color:white;
+    padding: 4px;
+}
+
+.visualizer {
+    padding: 2px;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    background-color:white;
+    border: 1px solid lightgray;
+    border-radius: 4px 4px 4px 4px;
+    display: block;
+}
+
+.canvas {
+    border: 1px solid darkgray;
+    border-radius: 4px 4px 4px 4px;
+    width: calc(100% - 155px);
+	height: calc(100% - 2px);
+	display: inline-block;
+}
+
+.control_panel {
+    background-color: white;
+	width: 150px;
+	height: calc(100% - 2px);
+	float: right;
+	border: 1px solid darkgray;
+	border-radius: 4px 4px 4px 4px;
+	position:relative;
+}
+
+.support_link {
+	position: absolute;
+    left: 0;
+  	bottom: 0;
+	padding: 2px;
+}
+
+.style_select {
+	width: 100%;
+	height: 20px;
+}
+
+.theme_select {
+	width: 100%;
+	height: 20px;
+}
+
+.range_part_from {
+	width: 45%;
+	height: 20px;
+	float: left;
+}
+
+.range_part_to {
+	width: 45%;
+	height: 20px;
+	float: right;
+}
+/* -----------------------------------------------------------------------*/
+
+/* -------------------------- Custom combobox ----------------------------*/
+.custom_combobox {
+	padding: 4px;
+}
+
+.custom_select {
+	font: 400 12px/1.3 consolas;
+	-webkit-appearance: none;
+	appearance: none;
+	color: dimgray;
+	border: 1px solid dimgray;
+	line-height: 1;
+	outline: 0;
+	padding: 0.1em 0.1em 0.1em 0.1em;
+	border-radius: 2px;
+	background-color: white;
+	background-image: 
+		linear-gradient(dimgray, dimgray),
+	  	linear-gradient(-135deg, transparent 60%, #bae1ff 70%),
+	  	linear-gradient(-225deg, transparent 60%, #bae1ff 70%),
+	  	linear-gradient(#bae1ff 42%, #006fc2 42%);
+	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+	background-size: 1px 100%, 20px 22px, 20px 22px, 20px 100%;
+	background-position: right 20px center, right bottom, right bottom, right bottom;   
+}
+  
+.custom_select:hover {
+	background-image: 
+		linear-gradient(#006fc2, #006fc2),
+	  	linear-gradient(-135deg, transparent 60%, #006fc2 70%),
+	  	linear-gradient(-225deg, transparent 60%, #006fc2 70%),
+	  	linear-gradient(#006fc2 42%, #bae1ff 42%);
+}
+  
+.custom_select:active {
+	background-image: 	
+		linear-gradient(#006fc2, #006fc2),
+	  	linear-gradient(-135deg, transparent 60%, #006fc2 70%),
+	  	linear-gradient(-225deg, transparent 60%, #006fc2 70%),
+	  	linear-gradient(#006fc2 42%, #bae1ff 42%);
+	color: #bae1ff;
+	border-color: #006fc2;
+	background-color: #006fc2;
+}
+
+.custom_combobox_label {
+    font-size: 14px;
+    padding-left: 0;
+}
+/* -----------------------------------------------------------------------*/
+
+/* -------------------------- Custom checkbox ----------------------------*/
+.custom_checkbox {
+	display: block;
+	position: relative;
+	padding-left: 25px;
+	/*margin-bottom: 12px;*/
+	margin: 4px;
+	cursor: pointer;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+  
+/* Hide the browser's default checkbox */
+.custom_checkbox input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+  
+/* Create a custom checkbox */
+.checkmark {
+	position: absolute;
+	top: 2px;
+	left: 0;
+	height: 15px;
+	width: 15px;
+	background-color: #eee;
+}
+  
+/* On mouse-over, add a grey background color */
+.custom_checkbox:hover input ~ .checkmark {
+	background-color: #ccc;
+}
+  
+/* When the checkbox is checked, add a blue background */
+.custom_checkbox input:checked ~ .checkmark {
+	background-color: #2196F3;
+}
+  
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+  
+/* Show the checkmark when checked */
+.custom_checkbox input:checked ~ .checkmark:after {
+	display: block;
+}
+  
+/* Style the checkmark/indicator */
+.custom_checkbox .checkmark:after {
+	left: 4px;
+	top: 0px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.custom_checkbox_label {
+    font-size: 14px;
+}
+/* -----------------------------------------------------------------------*/

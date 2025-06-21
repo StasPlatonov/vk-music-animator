@@ -1,0 +1,25 @@
+{
+    "name": {
+        "message": "VK Music Animator",
+        "description": "Extension name"
+    },
+    "description": {
+        "message": "Visualization of the music being played on vk.com(vkontakte). Select effect and make listening to music more fun!",
+        "description": "Extension description"
+    },
+    "label_style": {
+        "message": "Style"
+    },
+    "label_theme": {
+        "message": "Theme"
+    },
+    "label_opacity": {
+        "message": "Opacity"
+    },
+    "label_range": {
+        "message": "Range(Hz)"
+    },
+    "support_link": {
+        "message": "Support"
+    }
+}

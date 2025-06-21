@@ -1,0 +1,25 @@
+{
+    "name": {
+        "message": "VK Music Animator",
+        "description": "Название расширения"
+    },
+    "description": {
+        "message": "Визуализация музыки vkontakte(vk.com). Выберайте эффект, тему и сделайте прослушивание музыки более увлекательным!",
+        "description": "Описание расширения"
+    },
+    "label_style": {
+        "message": "Стиль"
+    },
+    "label_theme": {
+        "message": "Тема"
+    },
+    "label_opacity": {
+        "message": "Прозрачность"
+    },
+    "label_range": {
+        "message": "Диапазон(Гц)"
+    },
+    "support_link": {
+        "message": "Поддержка"
+    }
+}
