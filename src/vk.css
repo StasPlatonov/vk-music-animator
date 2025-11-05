@@ -186,3 +186,42 @@
     font-size: 14px;
 }
 /* -----------------------------------------------------------------------*/
+
+ @media (prefers-color-scheme: dark) {
+      /* Styles for dark mode */
+	.visualizer {
+		background-color:transparent;
+	}
+	
+	.visualizer_container {
+		background-color:transparent;
+	}
+	
+	.control_panel {
+		background-color:transparent;
+	}
+	
+	.custom_select {
+		background-color:field;
+		color: white;
+	}
+ }
+ 
+ @media (prefers-color-scheme: light) {
+    .visualizer {
+		background-color:white;
+	}
+	
+	.visualizer_container {
+		background-color:white;
+	}
+	
+	.control_panel {
+		background-color:white;
+	}
+	
+	.custom_select {
+		background-color:white;
+		color: black;
+	}
+}
